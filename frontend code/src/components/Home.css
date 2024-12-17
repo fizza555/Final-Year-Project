@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Fullscreen Carousel */
+.fullscreen-carousel .carousel-item {
+  height: 100vh; /* Full screen height */
+}
+
+.fullscreen-carousel img {
+  object-fit: cover; /* Ensure images scale to cover the container without distortion */
+  width: 100%; /* Make sure images take up full width */
+  height: 100%; /* Make sure images take up full height */
+}
+
+/* Carousel Caption Styles (No changes to text styling as per your request) */
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption-custom h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-left: 40%;
+}
+
+.carousel-caption-custom p {
+  font-size: 1.25rem;
+  margin-left: 40%;
+}
+
+/* Navbar responsiveness */
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption-custom h2 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption-custom p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+}
+
+/* About and Get Started Sections */
+#about, #get-started {
+  padding: 50px 0;
+}
+
+#about h2, #get-started h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p, #get-started p {
+  font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 0.875rem;
+}
+
+/* Ensure content is properly spaced on mobile */
+@media (max-width: 576px) {
+  .carousel-caption-custom h2 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-caption-custom p {
+    font-size: 0.875rem;
+  }
+}

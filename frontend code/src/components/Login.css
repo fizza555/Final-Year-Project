@@ -1,0 +1,119 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  margin: 0; 
+  padding: 0; 
+  position: fixed;
+  width: 100%; 
+  z-index: 1000; 
+}
+
+.navbar {
+  margin-bottom: 0px;
+  padding-bottom: 22px; 
+  width: 99%;
+  color: black; /* Ensure there's no space below the navbar */
+}
+
+.login-page {
+  background: linear-gradient(135deg, #070707, #022f2f); /* Matching signup-page background */
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Allows the content to stack vertically */
+  justify-content: flex-start; /* Align content at the top */
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 0; /* Align with signup-container */
+  flex-grow: 1; /* Allows the container to grow and take available space */
+}
+
+.login-card {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0 20px; /* Add spacing between form and any side elements */
+}
+
+.login-card .card-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-card .form-control {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-card .form-control:focus {
+  border-color: #9adfff60;
+  box-shadow: 0 0 0 0.2rem rgba(255, 154, 158, 0.25);
+}
+
+.login-card .text-center {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-card .btn-primary {
+  background-color: #9affa9;
+  border-color: #aeff9a;
+}
+
+.login-card .btn-primary:hover {
+  background-color: #c4eafa;
+  border-color: #c4e8fa;
+}
+
+.login-gif img {
+  max-width: 80%; 
+  max-height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 0 20px;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  margin-top: auto; /* Ensure footer sticks to the bottom */
+}
+
+.footer p {
+  margin: 0;
+  color: #6c757d;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
